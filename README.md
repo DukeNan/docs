@@ -22,7 +22,5 @@
 
 Buy me a coffee.
 
-
-![微信](./_media/images/wechat.jpg ':size=280x300')
-![支付宝](./_media/images/alipay.jpg ':size=280x300')
-​	
+<img src="./_media/images/alipay.jpg " width = "280" height = "300" alt="支付宝"></img>
+<img src="./_media/images/wechat.jpg " width = "280" height = "300" alt="微信"></img>
