@@ -11,3 +11,4 @@
 	* [http](linux/http/)
 		* [introduce](linux/http/introduce)
 	* [htop](linux/htop)
+	* [file-permissions](linux/file-permissions)
