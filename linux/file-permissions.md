@@ -24,7 +24,7 @@ $ chmod [-cfvR]  [--help]  [--version] mode file...
 ```
 
  其中：
- 
+
 - u 表示该文件的拥有者，g 表示与该文件的拥有者属于同一个群体(group)者，o 表示其他以外的人，a 表示这三者皆是。
 - + 表示增加权限、- 表示取消权限、= 表示唯一设定权限。
 - r 表示可读取，w 表示可写入，x 表示可执行，X 表示只有当该文件是个子目录或者该文件已经被设定过为可执行。
@@ -73,6 +73,26 @@ $ chmod -R a+r *
 
 ```shell
 $ chmod 777 file
+```
+
+
+
+## 修改所属
+
+实例1：
+
+修改文件所属的用户及用户组：
+
+```shell
+# chown dukenan:dukenan abc.txt
+```
+
+实例2：  
+
+修改文件夹所属用户及用户组：
+
+```shell
+# chown -R dukenan:dukenan ./docs/
 ```
 
 

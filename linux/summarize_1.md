@@ -1,6 +1,6 @@
 # Linux的进程、线程、文件描述符是什么
 
-> 文章转自：[文章链接](https://github.com/labuladong/fucking-algorithm/blob/master/%E6%8A%80%E6%9C%AF/linux%E8%BF%9B%E7%A8%8B.md)
+> 文章转自：[github链接](https://github.com/labuladong/fucking-algorithm/blob/master/%E6%8A%80%E6%9C%AF/linux%E8%BF%9B%E7%A8%8B.md)
 
 说到进程，恐怕面试中最常见的问题就是线程和进程的关系了，那么先说一下答案：**在 Linux 系统中，进程和线程几乎没有区别**。
 
@@ -116,5 +116,3 @@ $ cmd1 | cmd2 | cmd3
 当然，必须要说明的是，只有 Linux 系统将线程看做共享数据的进程，不对其做特殊看待，其他的很多操作系统是对线程和进程区别对待的，线程有其特有的数据结构，我个人认为不如 Linux 的这种设计简洁，增加了系统的复杂度。
 
 在 Linux 中新建线程和进程的效率都是很高的，对于新建进程时内存区域拷贝的问题，Linux 采用了 copy-on-write 的策略优化，也就是并不真正复制父进程的内存空间，而是等到需要写操作时才去复制。**所以 Linux 中新建进程和新建线程都是很迅速的**。
-
-
