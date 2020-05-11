@@ -6,6 +6,8 @@
 	* [asyncio](python/asyncio)
 	* [gevent](python/gevent)
 	* [collections](python/collections)
+	* [pyenv](python/pyenv)
+	* [decorator](python/decorator)
 
 <!-- 计算机网络部分 -->
 
