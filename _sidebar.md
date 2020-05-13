@@ -23,3 +23,6 @@
 	* [htop](linux/htop)
 	* [file-permissions](linux/file-permissions)
 	* [summarize-1](linux/summarize_1)
+
+<!-- nginx部分 -->
+* [nginx](nginx/)
