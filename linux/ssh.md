@@ -27,7 +27,7 @@ SSH协议框架中最主要的部分是三个协议：
 | Server Key | 默认为1小时 | 服务端 | Public Key | Server Key 是SSH-1协议中使用的一个临时的非对称密钥，每隔一定的间隔（默认是一个小时）都会在服务器重新生成。用于对Session Key进行加密（仅SSH-1协议有，SSH-2对其进行了增强，这里Server Key作为一个概念便于在流程中进行描述） |
 | Session Key | 客户端 | 会话（Session | Secret Key | Session Key是一个随机生成的对称密钥，用户SSH客户端和服务器之间的通信进行加密，会话结束时，被销毁 |
 
-1. 
+
 
 
 ### 用法

@@ -14,3 +14,7 @@
 * 后端开发规范：[https://kerry2019.github.io/unicorn-document-docsify/#/](https://kerry2019.github.io/unicorn-document-docsify/#/)
 * Restful 设计规范：[https://www.cnblogs.com/softidea/p/9712565.html](https://www.cnblogs.com/softidea/p/9712565.html)
 
+### 辅助工具
+
+- 流程图绘图：https://app.diagrams.net/
+
