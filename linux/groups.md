@@ -81,7 +81,7 @@ Re-enter new password:*******
 如果是超级用户，可以用下列形式指定任何用户的口令：
 
 ```shell
-# passwd sam 
+passwd sam 
 New password:******* 
 Re-enter new password:*******
 ```
@@ -97,7 +97,7 @@ Re-enter new password:*******
 用户组的管理涉及用户组的添加、删除和修改。组的增加、删除和修改实际上就是对/etc/group文件的更新。
 
 ```shell
-# groupadd 选项 用户组
+groupadd 选项 用户组
 ```
 
 可以使用的选项有：
@@ -108,7 +108,7 @@ Re-enter new password:*******
 实例1：
 
 ```shell
-# groupadd group1  
+groupadd group1  
 ```
 
 此命令向系统中增加了一个新组group1，新组的组标识号是在当前已有的最大组标识号的基础上加1。
@@ -116,17 +116,33 @@ Re-enter new password:*******
 实例2：
 
 ```shell
-# groupadd -g 101 group2
+groupadd -g 101 group2
 ```
 
 此命令向系统中增加了一个新组group2，同时指定新组的组标识号是101。
+
+实例3：
+
+```shell
+# 添加当前用户到docker用户组
+
+gpasswd -a  ${UAER} docker  
+```
+
+实例4：
+
+```shell
+newgrp docker  # 更新用户组
+```
+
+该命令类似login指令，当它是以相同的帐号，另一个群组名称，再次登入系统。欲使用newgrp指令切换群组，您必须是该群组的用户，否则将无法登入指定的群组。
 
 
 
 ###  删除用户组
 
 ```shell
-# groupdel 用户组
+groupdel 用户组
 ```
 
 
@@ -134,7 +150,7 @@ Re-enter new password:*******
 ###   修改用户组属性
 
 ```shell
-# groupmod 选项 用户组
+groupmod 选项 用户组
 ```
 
 可选参数：
@@ -146,7 +162,7 @@ Re-enter new password:*******
 实例1：
 
 ```bash
-# groupmod -g 102 group2 
+groupmod -g 102 group2 
 ```
 
 此命令将组group2的组标识号修改为102。
@@ -154,14 +170,40 @@ Re-enter new password:*******
 实例2：
 
 ```shell
-# groupmod –g 10000 -n group3 group2
+groupmod –g 10000 -n group3 group2
 ```
 
 此命令将组group2的标识号改为10000，组名修改为group3。
 
+### 查看用户组成员
 
+```shell
+ cat /etc/group | grep docker
+ 
+ docker:x:133:shaun  # (用户组：密码：group ID：成员)
+```
 
+### 组名
 
+也就是是用户组的名称，有字母或数字构成。同 /etc/passwd 中的用户名一样，组名也不能重复。
+
+### 组密码
+
+和 /etc/passwd 文件一样，这里的 "x" 仅仅是密码标识，真正加密后的组密码默认保存在 /etc/gshadow 文件中。
+
+用户组密码主要是用来指定组管理员的，由于系统中的账号可能会非常多，root 用户可能没有时间进行用户的组调整，这时可以给用户组指定组管理员，如果有用户需要加入或退出某用户组，可以由该组的组管理员替代 root 进行管理。但是这项功能目前很少使用，我们也很少设置组密码。如果需要赋予某用户调整某个用户组的权限，则可以使用 sudo 命令代替。
+
+### 组ID（GID）
+
+就是群组的 ID 号，Linux 系统就是通过 GID 来区分用户组的，同用户名一样，组名也只是为了便于管理员记忆。
+
+这里的组 GID 与 /etc/passwd 文件中第 4 个字段的 GID 相对应，实际上，/etc/passwd 文件中使用 GID 对应的群组名，就是通过此文件对应得到的。
+
+### 组成员
+
+此字段列出每个群组包含的所有用户。需要注意的是，如果该用户组是这个用户的初始组，则该用户不会写入这个字段，可以这么理解，该字段显示的用户都是这个用户组的附加用户。
+
+每个用户都可以加入多个附加组，但是只能属于一个初始组。所以我们在实际工作中，如果需要把用户加入其他组，则需要以附加组的形式添加。例如，我们想让 lamp 也加入 root 这个群组，那么只需要在第一行的最后一个字段加入 lamp，即 `root:x:0:lamp` 就可以了。
 
 
 
