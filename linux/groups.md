@@ -1,4 +1,4 @@
-# Linux用户和用户组
+#     Linux用户和用户组
 
 
 
@@ -126,7 +126,7 @@ groupadd -g 101 group2
 ```shell
 # 添加当前用户到docker用户组
 
-gpasswd -a  ${UAER} docker  
+gpasswd -a  ${USER} docker  
 ```
 
 实例4：
