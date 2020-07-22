@@ -147,7 +147,7 @@ Counter({'b': 4})
 ### 方法
 
 - append(x)
-  	- 添加 *x* 到右端。
+   - 添加 *x* 到右端。
 - appendleft(*x*)
    - 添加 *x* 到左端。
 - clear()
