@@ -1,6 +1,3 @@
----
-/_typora-root-url: ../_media/images
----
 
 ## 设计模式
 

@@ -30,6 +30,12 @@
 	* [file-permissions](linux/file-permissions)
 	* [summarize-1](linux/summarize_1)
 
+<!-- 设计模式 -->
+* [design-patterns](design_patterns/)
+	* [design_philosophy](design_patterns/design_philosophy)
+	* [factory](design_patterns/factory)
+	* [abstract_factory](design_patterns/abstract_factory)
+
 <!-- nginx部分 -->
 * [nginx](nginx/)
 
