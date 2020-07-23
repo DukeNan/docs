@@ -11,9 +11,20 @@
 抽象工厂模式包含如下角色：
 
 - AbstractFactory：抽象工厂
+
+  提供了创建产品的接口，它包含多个创建产品的方法 newProduct()，可以创建多个不同等级的产品。
+
 - ConcreteFactory：具体工厂
+
+  主要是实现抽象工厂中的多个抽象方法，完成具体产品的创建。
+
 - AbstractProduct：抽象产品
+
+  定义了产品的规范，描述了产品的主要特性和功能，抽象工厂模式有多个抽象产品。
+
 - Product：具体产品
+
+  实现了抽象产品角色所定义的接口，由具体工厂来创建，它 同具体工厂之间是多对一的关系。
 
 ![abatract-factory02](../_media/images/design_patterns/abatract-factory02.jpg)
 

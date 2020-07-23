@@ -35,6 +35,7 @@
 	* [design_philosophy](design_patterns/design_philosophy)
 	* [factory](design_patterns/factory)
 	* [abstract_factory](design_patterns/abstract_factory)
+	* [builder](design_patterns/builder)
 
 <!-- nginx部分 -->
 * [nginx](nginx/)
