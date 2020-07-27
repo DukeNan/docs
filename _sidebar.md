@@ -37,6 +37,7 @@
 	* [abstract_factory](design_patterns/abstract_factory)
 	* [builder](design_patterns/builder)
 	* [singleton](design_patterns/singleton)
+	* [prototype](design_patterns/prototype)
 
 <!-- nginx部分 -->
 * [nginx](nginx/)
