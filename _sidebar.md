@@ -39,6 +39,7 @@
 	* [singleton](design_patterns/singleton)
 	* [prototype](design_patterns/prototype)
 	* [adapter](design_patterns/adapter)
+	* [bridge](design_patterns/bridge)
 
 <!-- nginx部分 -->
 * [nginx](nginx/)
