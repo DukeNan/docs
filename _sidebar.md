@@ -43,6 +43,7 @@
 
 <!-- nginx部分 -->
 * [nginx](nginx/)
+	* [conf](nginx/conf)
 
 <!-- 操作系统部分 -->
 * [OS](OS/)
