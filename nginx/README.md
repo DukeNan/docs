@@ -1,6 +1,6 @@
 ### 知识网结构图
 
-<img src="../_media/images/nginx/nginx_01.png" alt="nginx_01" style="zoom:50%;" align="left" />
+<img src="../_media/images/nginx/nginx_01.png" alt="nginx_01" style="zoom:50%;"/>
 
 
 
