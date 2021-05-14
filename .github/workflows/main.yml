@@ -23,4 +23,4 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd ${{ secrets.WORK_DIR }}
-            sudo sh deploy.sh
+            sh deploy.sh
