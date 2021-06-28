@@ -12,6 +12,12 @@
 	* [orderdict](python/orderdict)
 	* [yml](python/yml)
 
+
+<!-- Python部分 -->
+
+* [golang](golang/)
+	* [channel](golang/channel)
+
 <!-- 计算机网络部分 -->
 
 * [networks](networks/)
