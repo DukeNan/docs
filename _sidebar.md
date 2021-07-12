@@ -62,6 +62,10 @@
 * [mysql](mysql/)
 	* [transaction](mysql/transaction)
 
+<!-- redis部分 -->
+* [redis](redis/)
+	* [cache](redis/cache)
+
 <!-- elasticsearch部分 -->
 * [elasticsearch](elasticsearch/)
 	* [ILM](elasticsearch/ILM)
