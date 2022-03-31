@@ -69,6 +69,7 @@
 <!-- elasticsearch部分 -->
 * [elasticsearch](elasticsearch/)
 	* [ILM](elasticsearch/ILM)
+	* [Inverted_Index](elasticsearch/Inverted_Index)
 
 <!-- 资料整理 -->
 * [collections](collections)
