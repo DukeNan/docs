@@ -178,10 +178,6 @@ location ~* \.(js|css|jpg|jpeg|gif|png|swf)$ {
 }
 ```
 
-
-
-
-
 ### 配置文件详解
 
 ```bash

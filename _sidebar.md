@@ -3,7 +3,7 @@
 <!-- Python部分 -->
 
 * [python](python/)
-	* [asyncio](python/asyncio)
+	* [GC](python/GC)
 	* [gevent](python/gevent)
 	* [collections](python/collections)
 	* [pyenv](python/pyenv)
