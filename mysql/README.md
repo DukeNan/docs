@@ -213,7 +213,7 @@ MySQL大多数事务型的存储引擎都不只是简单的行级锁，基于性
 
 操作事务：
 
-<img src="../_media/images/mysql/mysql_04.png" alt="事务" align="left" />
+<img src="../_media/images/mysql/mysql_04.png" alt="事务" />
 
 **事务具有ACID的特性：**
 

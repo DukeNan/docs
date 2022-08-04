@@ -13,11 +13,12 @@
 	* [yml](python/yml)
 
 
-<!-- Python部分 -->
+<!-- golang部分 -->
 
 * [golang](golang/)
 	* [channel](golang/channel)
 	* [context](golang/context)
+	* [type](golang/context)
 
 <!-- 计算机网络部分 -->
 
