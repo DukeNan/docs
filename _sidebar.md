@@ -11,6 +11,7 @@
 	* [event](python/event)
 	* [orderdict](python/orderdict)
 	* [yml](python/yml)
+	* [celery](python/celery)
 
 
 <!-- golang部分 -->
