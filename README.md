@@ -18,14 +18,6 @@
 
  网站：https://www.dukenan.top
 
-### 后记
 
-​	如果本人的日常笔记能对你有所帮助，请记得支持一下。
-
-Buy me a coffee.
-
-<img src="./_media/images/alipay.jpg " width = "300" height = "300" alt="支付宝"></img>
-<img src="./_media/images/wechat.jpg " width = "300" height = "300" alt="微信"></img>
-
-<center/>粤ICP备19088394号</center>
+<center/><a href="https://beian.miit.gov.cn" target="_blank">粤ICP备19088394号</a></center>
 
