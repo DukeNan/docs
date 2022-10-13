@@ -1,1 +1,6 @@
 .DS_Store
+
+# aliyun serverless
+.s
+s.yaml
+bootstrap
